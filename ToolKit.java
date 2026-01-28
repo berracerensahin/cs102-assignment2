@@ -12,7 +12,7 @@ public class ToolKit {
 }
 public static int maxValue (int[] arr) {
     int max = arr[0];
-    for (int i = 0; i < arr.length(); i++) {
+    for (int i = 0; i < arr.length; i++) {
         if (arr[i] > max) {
             max = arr[i];
         }
@@ -22,11 +22,21 @@ public static int maxValue (int[] arr) {
 
 public static int minValue (int[] arr) {
     int min = arr[0];
-    for (int i = 0; i < arr.length(); i++) {
+    for (int i = 0; i < arr.length; i++) {
         if (arr[i] < min) {
             min = arr[i];
         }
     }
     return min;
 }
+public static int average(int[] arr){
+        int size=arr.length;
+        int sum=0;
+        for(int i=0; i<size; i++){
+            sum+=arr[i];
+        }
+        int avg=(sum/size);
+        return avg;
+}
+
 
