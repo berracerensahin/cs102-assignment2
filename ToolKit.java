@@ -39,4 +39,18 @@ public static int average(int[] arr){
         return avg;
 }
 
+public void sumOfNums(int[] nums) {
+
+        int sumOfOdds;
+        int sumOfEvens;
+
+        for (int i = 0; i < nums.length; i++) {
+            if (i % 2 == 0) {
+                sumOfEvens += nums[i];
+            } else {
+                sumOfOdds += nums[i];
+        }
+    }
+}
+
 
