@@ -1,8 +1,9 @@
 import java.util.Scanner;
 public class ToolKit {
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         int optionNum;
         Scanner sc = new Scanner(System.in);
+        System.out.println("Choose the array size:");
         int size = sc.nextInt();
         int[] numbers = new int[size];
         for(int i=0; i<size; i++){
@@ -33,9 +34,7 @@ public class ToolKit {
         sc.close();
         
     }
-    
-}
-public static int maxValue (int[] arr) {
+    public static int maxValue (int[] arr) {
     int max = arr[0];
     for (int i = 0; i < arr.length; i++) {
         if (arr[i] > max) {
@@ -64,9 +63,9 @@ public static int average(int[] arr){
         return avg;
 }
 
-public void sumOfNums(int[] nums) {
-    int sumOfOdds;
-    int sumOfEvens;
+public static void sumOfNums(int[] nums) {
+    int sumOfOdds=0;
+    int sumOfEvens=0;
 
      for (int i = 0; i < nums.length; i++) {
          if (i % 2 == 0) {
@@ -78,5 +77,7 @@ public void sumOfNums(int[] nums) {
     System.out.println("Sum of evens: " + sumOfEvens);
     System.out.println("Sum of odds: " + sumOfOdds);
 }
+}
+
 
        
